@@ -1,1 +1,8 @@
-<p>dashboard works!</p>
+<div class="container">
+  <p>Mi nombre es {{getNombre()}}</p>
+  <img [src]="urlImgen">
+  <input type="text" [placeholder]="textoPlaceholder" [disabled]="habilitado">
+  <button (click)="cambiar()">Cambiar</button>
+  <app-card [texto]="texto" (nuevoEvento)="cambiartextopadreporcard($event)" [(textodedosformas)]="textoparadosformaspadre"></app-card>
+  <p>que hay en el padre {{textoparadosformaspadre}}</p>
+</div>
