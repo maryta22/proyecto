@@ -14,6 +14,7 @@ export class CardComponent implements OnInit {
   @Input() textodedosformas!: String;
   @Output() textodedosformasChange = new EventEmitter<string>();
 
+
   constructor() {
     this.texto = "";
    }
